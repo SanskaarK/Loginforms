@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Login Form</title>
+    <style> 
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100vw;
+            background: linear-gradient(to bottom right,rgb(10, 1, 31),rgb(61, 3, 61),red);
+        }
+        .backbox{
+            display: flex;
+            justify-content: center;
+            align-items: center;     
+            background-color: rgb(63, 208, 252);
+            height: 60vh;
+            width: 60vw;
+            box-shadow: 5px 3px 15px ;
+        }
+        .inner-main{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: #fff;
+            height: 70%;
+            width: 55%;
+        }
+        .inner-head{
+            width: 80%;
+            text-align: left;
+            font-size: 18px;
+            font-weight: 300;
+            color: rgb(63, 208, 252);
+        }
+        .boxes, .box-btn{
+            padding: 15px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .boxes input{
+            height: 110%;
+            width: 80%;
+        }
+        .box-btn input{
+            width: 80%;
+            height: 30px;
+            background-color:rgb(63, 208, 252);
+            border: 0px;
+            color:#fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="backbox">
+            <div class="inner-main">
+                <div class="inner-head">
+                    <h2>Login To Your Account</h2>
+                </div>
+                <div class="boxes">
+                    <input type="text" id="name" placeholder="Name">
+                </div>
+                <div class="boxes">
+                    <input type="password" name="pass" id="pass" placeholder="Password">
+                </div>
+                <div class="box-btn">
+                    <input type="button" value="Login">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

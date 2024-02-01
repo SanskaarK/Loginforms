@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Style+Script&display=swap" rel="stylesheet">
+    <style>
+        *{
+            padding: 0px ;
+            margin: 0px;
+            font-size: 20px;
+        }
+        .cont-main{
+            width: 100vw;
+            height: 100vh;
+            background-image: url(images/DO.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .big-box{
+            width: 55%;
+            height: 80%;
+            display: flex;
+            border: 1px solid transparent;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+        .left{
+            background-color: #11001C;
+            height: 100%;
+            width: 50%;
+        }
+        .left img{
+            height: 100%;
+            width: 100%;
+            object-fit: fill;            
+            mix-blend-mode:difference;
+        }
+        .right{
+            background: linear-gradient(#1A2855,#1A2855) padding-box,
+            linear-gradient(to bottom left,#57ffff 10%,#1744AF) border-box;
+            border-radius: 0px 20px 20px 0px;
+            border:2px solid transparent;
+            height: 100%;
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .cont{
+            height: 70%;
+            width: 90%;
+            text-align: center;
+            background: linear-gradient(to right,#1C2F58,#363665) padding-box,
+            linear-gradient(to right,#36DAF4,#4445F1,#A159C6,#373B70)border-box;
+            border-radius: 0.7em;
+            border: 2px solid transparent;
+            font-weight: 200;
+            /* font-family: 'Style Script', cursive; */
+            font-family: 'Quicksand', sans-serif;
+        }
+        .cont h1{
+            color: white;
+            font-size: 2rem;
+            font-weight: 200;
+            font-family: 'Style Script', cursive;
+        }
+        form .form-item{
+            padding:0px 20px ;
+            color:#fff;
+            display: flex;
+            justify-content: center;
+            align-items: left;
+            flex-direction: column;            
+            text-align: left;
+            margin: 20px 0px;
+        }
+        .form-item input{
+            font-weight: 200;
+            font-family: 'Quicksand', sans-serif;
+            background: linear-gradient(#1F2F5B,#465376) padding-box,
+            linear-gradient(#465376,#7D91CD)border-box;
+            border-radius: 7px;
+            border: 1px solid transparent;
+            height: 30px;
+            font-size: 0.8Sem;
+            padding-left: 15px;
+        }
+        form .btn{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        form .btn input{
+            margin-top: 20px;
+        }
+        .btn input{
+            padding: 0px;
+            width: 50%;
+            background: linear-gradient(to right,#AD65CA,#733AB0) padding-box,
+            linear-gradient(to right,#CE7CDE,#7B5AA3) border-box;
+            border-radius: 15px;
+            border: 2px solid transparent;
+            color: #fff;
+        }
+        
+    </style>
+</head>
+<body>
+    <main class="cont-main">
+        <div class="big-box">
+            <div class="left">
+                <img src="images/D.png" alt="">
+            </div>
+            <div class="right">
+                <div class="cont">
+                    <h1>
+                        Login Form
+                    </h1>
+                    <form action="#">
+                        <div class="form-item">
+                            <label for="email">E-Mail</label>
+                            <input type="email" name="email" id="email" placeholder="Enter Email ID">
+                        </div>
+                        <div class="form-item">
+                            <label for="pass">Password</label>
+                            <input type="password" name="pass" id="pass" placeholder="Password">
+                        </div>
+                        <div class="form-item btn">
+                            <input type="submit" value="Submit">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
